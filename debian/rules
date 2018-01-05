@@ -1,0 +1,8 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+# debian/rules file for the Debian/GNU Linux r-other-undocumeantit-korpus.lang.en package
+# Copyright 2018 by Meik Michalke <meik.michalke@hhu.de>
+
+debRreposname := other-undocumeantit
+
+include /usr/share/R/debian/r-cran.mk

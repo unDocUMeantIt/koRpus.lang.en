@@ -1,0 +1,19 @@
+Source: r-other-undocumeantit-korpus.lang.en
+Section: gnu-r
+Priority: optional
+Maintainer: Meik Michalke <meik.michalke@hhu.de>
+Build-Depends-Indep: debhelper (>> 9.0.0), r-base-dev (>= 3.1.0), cdbs, r-cran-korpus (>= 0.11-2) | r-other-reaktanz-korpus (>= 0.11-2), r-cran-sylly.en |
+ r-other-reaktanz-sylly.en | r-other-undocumeantit-sylly.en
+Standards-Version: 3.9.3.1
+Homepage: https://reaktanz.de/?c=hacking&s=koRpus
+
+Package: r-other-undocumeantit-korpus.lang.en
+Architecture: all
+Section: gnu-r
+Depends: r-base-core (>= 3.4.0), r-cran-korpus (>= 0.11-2) | r-other-reaktanz-korpus (>= 0.11-2), r-cran-sylly.en | r-other-reaktanz-sylly.en | r-other-undocumeantit-sylly.en
+Description: GNU R package "Language Support for 'koRpus' Package: English"
+ .
+ Adds support for the English language to the 'koRpus' package. To ask for help, report bugs, suggest feature improvements, or discuss the global development of the package, please
+ consider subscribing to the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
+Homepage: https://reaktanz.de/?c=hacking&s=koRpus
+Suggests:
