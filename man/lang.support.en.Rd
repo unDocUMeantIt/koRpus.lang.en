@@ -4,7 +4,10 @@
 \alias{lang.support.en}
 \title{Language support for English}
 \usage{
-lang.support.en()
+lang.support.en(...)
+}
+\arguments{
+\item{...}{Optional arguments for \code{\link[koRpus:set.lang.support]{set.lang.support}}.}
 }
 \description{
 This function adds support for English to the koRpus package. You should not

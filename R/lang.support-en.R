@@ -35,6 +35,7 @@
 #' 
 #' To also be able to use hyphenation, the package sylly.en needs to exist and be loaded.
 #'
+#' @param ... Optional arguments for \code{\link[koRpus:set.lang.support]{set.lang.support}}.
 #' @references
 #' [1] \url{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}
 #'
@@ -46,7 +47,7 @@
 #' lang.support.en()
 #' }
 
-lang.support.en <- function() {
+lang.support.en <- function(...) {
   koRpus::set.lang.support("treetag",
     list("en"=list(
       ## preset: "en"
@@ -96,7 +97,8 @@ lang.support.en <- function() {
           )
         }
       })
-    )
+    ),
+    ...
   )
 
   koRpus::set.lang.support("kRp.POS.tags",
@@ -169,7 +171,8 @@ lang.support.en <- function() {
         "SENT", "fullstop", "Sentence ending punctuation" # not in guidelines
         ), ncol=3, byrow=TRUE, dimnames=list(c(),c("tag","wclass","desc")))
       )
-    )
+    ),
+    ...
   )
 }
 
