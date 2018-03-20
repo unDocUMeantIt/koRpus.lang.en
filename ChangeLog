@@ -1,8 +1,6 @@
 ChangeLog for package koRpus.lang.en
 
 changes in version 0.1-2 (2018-03-20)
-unreleased:
-  - this release is under development
 fixed:
   - package name in license header
 changed:
