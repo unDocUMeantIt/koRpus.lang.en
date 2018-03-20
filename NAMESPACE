@@ -3,3 +3,4 @@
 export(lang.support.en)
 importFrom(koRpus,set.lang.support)
 importFrom(sylly.en,hyph.support.en)
+importFrom(utils,packageVersion)

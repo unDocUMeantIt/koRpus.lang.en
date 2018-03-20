@@ -1,6 +1,6 @@
 ChangeLog for package koRpus.lang.en
 
-changes in version 0.1-2 (2018-02-20)
+changes in version 0.1-2 (2018-03-20)
 unreleased:
   - this release is under development
 fixed:
@@ -10,14 +10,15 @@ changed:
 added:
   - support optional arguments for koRpus::set.lang.support()
 temporary:
-  - this is planned to be a CRAN-only transitional release. since this package needs
-    koRpus >=0.11-2 but the CRAN version (0.10-2) should be upgraded after this
-    package was already accepted, we'll work around this by deactivating functionality
-    unavailable to older koRpus versions, if such an old package is used
+  - this is planned to be a CRAN-only transitional release. since this
+    package needs koRpus >=0.11-2 but the CRAN version (0.10-2) should be upgraded
+    after this package was already accepted, we'll work around this by
+    deactivating functionality unavailable to older koRpus versions, if such an old
+    package is used
   - temporarily lowered koRpus dependency to 0.10-2
-  - added a check for koRpus version to .onAttach(), so that the language support
-    which is already present won't be tampered with; i.e., you can safely load this
-    package with older koRpus packages, it just won't add anything
+  - added a check for koRpus version to .onAttach(), so that the language
+    support which is already present won't be tampered with; i.e., you can safely
+    load this package with older koRpus packages, it just won't add anything
 
 changes in version 0.1-1 (2018-01-05)
 changed:
