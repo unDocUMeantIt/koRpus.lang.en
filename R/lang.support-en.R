@@ -176,13 +176,7 @@ lang.support.en <- function(...) {
 # this internal, non-exported function causes the language support to be
 # properly added when the package gets loaded
 #' @importFrom sylly.en hyph.support.en
-#' @importFrom utils packageVersion
 .onAttach <- function(...) {
-  # TODO: remove the if condition after successfull transition of this package and koRpus v0.11 to CRAN
-  # this was added to make sure that the package can be checked on CRAN with older but incompatible
-  # versions of koRpus; they already included support for english
-  if(packageVersion("koRpus") >= "0.11.2"){
-    lang.support.en()
-    sylly.en::hyph.support.en()
-  } else {}
+  lang.support.en()
+  sylly.en::hyph.support.en()
 }

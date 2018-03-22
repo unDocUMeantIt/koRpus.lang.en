@@ -11,9 +11,9 @@ Language Support for 'koRpus' Package: English.
 \tabular{ll}{
 Package: \tab koRpus.lang.en\cr
 Type: \tab Package\cr
-Version: \tab 0.1-2\cr
-Date: \tab 2018-03-21\cr
-Depends: \tab R (>= 3.1),koRpus (>= 0.10-2)\cr
+Version: \tab 0.1-3\cr
+Date: \tab 2018-03-22\cr
+Depends: \tab R (>= 3.1),koRpus (>= 0.11-2)\cr
 Encoding: \tab UTF-8\cr
 License: \tab GPL (>= 3)\cr
 LazyLoad: \tab yes\cr
