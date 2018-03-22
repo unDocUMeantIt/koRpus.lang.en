@@ -6,9 +6,18 @@ More information on 'koRpus.lang.en' is available on the [project homepage](http
 
 ## Installation
 
+### Installation from CRAN
+
+The latest release that is considered stable for productive work can be found on the CRAN mirrors, which
+means you can install it from a running R session like this:
+
+```
+install.packages("koRpus.lang.en")
+```
+
 ### Installation from the official l10n repository
 
-The latest stable release can be installed directly from the project's own repository:
+The latest stable release can also be installed directly from the project's own repository:
 
 ```r
 install.packages(
