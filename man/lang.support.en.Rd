@@ -15,6 +15,16 @@ need to call it manually, as that is done automatically when this package is
 being loaded.
 }
 \details{
+The POS tags cover tag definitions from multiple sources. Please note that there is one tag,
+      "PRP", that
+is defined in both PENN[3] and BNC[4] tagsets,
+      but with different meanings: The PENN tag marks
+personal pronouns,
+      whereas the BNC tag marks prepositions (except "of"). Since the conflicting tag
+is not being used by TreeTagger's PENN parameter set, but in its BNC set,
+      koRpus also uses the BNC
+definition. Keep this in mind if you use this language support package with alternative taggers.
+
 In particular, this function adds the following:
 \itemize{
  \item \code{lang}: The additional language "en" to be used with koRpus
@@ -22,7 +32,9 @@ In particular, this function adds the following:
       implemented according to the respective TreeTagger[1] script
  \item \code{POS tags}: An additional set of tags,
       implemented using the documentation for the corresponding
-   TreeTagger parameter set[2]
+   TreeTagger parameter set[2], additional tags from the PENN treebank project[3],
+      and the BNC tagset[4] used in
+   an alternative TreeTagger parameter set.
 }
 Hyphenation patterns are provided by means of the \code{\link[sylly.en:hyph.support.en]{sylly.en}} package.
 }
@@ -33,4 +45,8 @@ lang.support.en()
 [1] \url{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/}
 
 [2] \url{http://www.cis.uni-muenchen.de/~schmid/tools/TreeTagger/data/Penn-Treebank-Tagset.pdf}
+
+[3] \url{https://www.ling.upenn.edu/courses/Fall_2003/ling001/penn_treebank_pos.html}
+
+[4] \url{http://www.natcorp.ox.ac.uk/docs/c5spec.html}
 }
