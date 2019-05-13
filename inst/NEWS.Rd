@@ -1,6 +1,21 @@
 \name{NEWS}
 \title{News for Package 'koRpus.lang.en'}
 \encoding{UTF-8}
+\section{Changes in koRpus.lang.en version 0.1-3 (2019-05-13)}{
+  \subsection{changed}{
+    \itemize{
+      \item reverted temporary transitional changes from 0.1-2
+    }
+  }
+  \subsection{added}{
+    \itemize{
+      \item now also supports the BNC tagset (thanks to Elen Le Foll)
+      \item added missing PENN tags NNP, NNPS, and PRP$, and explained
+        why koRpus defaults to the BNC definition for the conflicting
+        tag PRP in the documentation.
+    }
+  }
+}
 \section{Changes in koRpus.lang.en version 0.1-2 (2018-03-20)}{
   \subsection{fixed}{
     \itemize{
