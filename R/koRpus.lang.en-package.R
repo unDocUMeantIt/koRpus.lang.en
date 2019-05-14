@@ -4,7 +4,7 @@
 #' \tabular{ll}{
 #' Package: \tab koRpus.lang.en\cr
 #' Type: \tab Package\cr
-#' Version: \tab 0.1-3\cr
+#' Version: \tab 0.1-4\cr
 #' Date: \tab 2019-05-14\cr
 #' Depends: \tab R (>= 3.1),koRpus (>= 0.11-2)\cr
 #' Encoding: \tab UTF-8\cr
