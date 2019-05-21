@@ -61,7 +61,7 @@ lang.support.en <- function(...) {
       lang="en",
       encoding="UTF-8",
       preset=function(TT.cmd, TT.bin, TT.lib, unix.OS){
-        TT.abbrev       <- file.path(TT.lib, "english-abbreviations")
+        TT.abbrev       <- file.path(TT.lib, "english-abbreviations-utf8")
         TT.lexicon      <- file.path(TT.lib, "english-lexicon.txt")
         TT.filter       <- "perl -pe 's/\\tV[BDHV]/\\tVB/;s/IN\\/that/\\tIN/;'"
         TT.lookup       <- file.path(TT.cmd, "lookup.perl")
@@ -78,7 +78,7 @@ lang.support.en <- function(...) {
               TT.lookup         = TT.lookup,
               TT.filter         = TT.filter,
 
-              TT.tknz.opts      = paste("-e"),
+              TT.tknz.opts      = "-e",
               TT.lookup.command = paste("perl", TT.lookup, TT.lexicon, "|"),
               TT.filter.command = paste("|", TT.filter),
               TT.pre.tagger     = "grep -v '^$' |"
@@ -96,7 +96,7 @@ lang.support.en <- function(...) {
               TT.lookup         = c(),
               TT.filter         = TT.filter,
 
-              TT.tknz.opts      = paste("-e -a", TT.abbrev),
+              TT.tknz.opts      = "-e",
               TT.lookup.command = c(),
               TT.filter.command = paste("|", TT.filter),
               TT.pre.tagger     = c()

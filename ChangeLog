@@ -1,8 +1,11 @@
 ChangeLog for package koRpus.lang.en
 
-changes in version 0.1-4 (2019-05-13)
+changes in version 0.1-4 (2019-05-21)
 unreleased:
   - this release is under development
+fixed:
+  - removed hard coded abbreviations from global TT.tknz.opts in preset,
+    to enable checks for file names by koRpus
 
 changes in version 0.1-3 (2019-05-13)
 changed:
