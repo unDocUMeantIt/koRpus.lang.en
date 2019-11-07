@@ -174,8 +174,9 @@ lang.support.en <- function(...) {
         #"PRP", "pronoun", "Personal pronoun", # contradicts BNC tag, see below!
         "PRP$", "pronoun", "Possessive pronoun",
         ## BNC tags
-        "AJ0", "adjective", "Adjective, comparative",
-        "AJC", "adjective", "Adjective, superlative",
+        "AJ0", "adjective", "Adjective, general or positive",
+        "AJC", "adjective", "Adjective, comparative",
+        "AJS", "adjective", "Adjective, superlative",
         "AT0", "article", "Article, which typically begins a noun phrase", # includes no
         "AV0", "adverb", "Adverb  not subclassified as AVP or AVQ", # N.B. Unlike,adverbs  adjectives, are not tagged
           # as positive, comparative, or superlative. This is because of the relative rarity of comparative and
@@ -246,7 +247,23 @@ lang.support.en <- function(...) {
         "VVN", "verb", "Past participle form of lexical verbs",
         "VVZ", "verb", "3rd person singular present (-s form) of lexical verbs",
         "XX0", "negation", "Negative particle not or n\'t",
-        "ZZ0", "letter", "Alphabetical symbols, e.g. A, a, B, b, c, d"
+        "ZZ0", "letter", "Alphabetical symbols, e.g. A, a, B, b, c, d",
+         # abiguity tags
+        "AJ0-AV0", "ambiguous", "Adjective, general or positive/Adverb  not subclassified as AVP or AVQ (ambiguity tag)",
+        "AJ0-VVN", "ambiguous", "Adjective, general or positive/Past participle form of lexical verbs (ambiguity tag)",
+        "AJ0-VVD", "ambiguous", "Adjective, general or positive/Past tense form of lexical verbs (ambiguity tag)",
+        "AJ0-NN1", "ambiguous", "Adjective, general or positive/Singular common noun (ambiguity tag)",
+        "AJ0-VVG", "ambiguous", "Adjective, general or positive/Gerund or present participle (-ing form) of lexical verbs (ambiguity tag)",
+        "AVP-PRP", "ambiguous", "Adverb particle/Preposition, except of (ambiguity tag)",
+        "AVQ-CJS", "ambiguous", "Wh-adverb/Subordinating conjunction (ambiguity tag)",
+        "CJS-PRP", "ambiguous", "Subordinating conjunction/Preposition, except of (ambiguity tag)",
+        "CJT-DT0", "ambiguous", "The subordinating conjunction that/General determiner (ambiguity tag)",
+        "CRD-PNI", "ambiguous", "Cardinal number/Indefinite pronoun (ambiguity tag)",
+        "NN1-NP0", "ambiguous", "Singular common noun/Proper noun (ambiguity tag)",
+        "NN1-VVB", "ambiguous", "Singular common noun/Finite base form of lexical verbs (ambiguity tag)",
+        "NN1-VVG", "ambiguous", "Singular common noun/Gerund or present participle (-ing form) of lexical verbs (ambiguity tag)",
+        "NN2-VVZ", "ambiguous", "Plural common noun/Verb, 3rd person singular present (-s form) of HAVE, has, \'s (ambiguity tag)",
+        "VVD-VVN", "ambiguous", "Past tense form of lexical verbs/Past participle form of lexical verbs (ambiguity tag)"
         ), ncol=3, byrow=TRUE, dimnames=list(c(),c("tag","wclass","desc"))),
       tag.class.def.punct=matrix(c(
         ",", "comma", "Comma", # not in guidelines
