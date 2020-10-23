@@ -1,4 +1,4 @@
-# Copyright 2010-2019 Meik Michalke <meik.michalke@hhu.de>
+# Copyright 2010-2020 Meik Michalke <meik.michalke@hhu.de>
 #
 # This file is part of the R package koRpus.lang.en.
 #
@@ -61,25 +61,25 @@ lang.support.en <- function(...) {
       lang="en",
       encoding="UTF-8",
       preset=function(TT.cmd, TT.bin, TT.lib, unix.OS){
-        TT.abbrev       <- file.path(TT.lib, "english-abbreviations-utf8")
-        TT.lexicon      <- file.path(TT.lib, "english-lexicon.txt")
+        TT.tokenizer    <- file.path(TT.cmd, "utf8-tokenize.perl")
+        TT.abbrev       <- file.path(TT.lib, "english-abbreviations")
         TT.filter       <- "perl -pe 's/\\tV[BDHV]/\\tVB/;s/IN\\/that/\\tIN/;'"
-        TT.lookup       <- file.path(TT.cmd, "lookup.perl")
+        TT.params       <- file.path(TT.lib, "english.par")
         # TT.tokenizer TT.tknz.opts "|" TT.lookup.command TT.tagger TT.opts TT.params TT.filter.command
         if(isTRUE(unix.OS)){
           # preset for unix systems
           return(
             list(
-              TT.tokenizer      = file.path(TT.cmd, "utf8-tokenize.perl"),
+              TT.tokenizer      = TT.tokenizer,
               TT.tagger         = file.path(TT.bin, "tree-tagger"),
               TT.abbrev         = TT.abbrev,
-              TT.params         = file.path(TT.lib, "english-utf8.par"),
-              TT.lexicon        = TT.lexicon,
-              TT.lookup         = TT.lookup,
+              TT.params         = TT.params,
+              TT.lexicon        = c(),
+              TT.lookup         = c(),
               TT.filter         = TT.filter,
 
               TT.tknz.opts      = "-e",
-              TT.lookup.command = paste("perl", TT.lookup, TT.lexicon, "|"),
+              TT.lookup.command = c(),
               TT.filter.command = paste("|", TT.filter),
               TT.pre.tagger     = "grep -v '^$' |"
             )
@@ -88,10 +88,10 @@ lang.support.en <- function(...) {
           # preset for windows systems
           return(
             list(
-              TT.tokenizer      = file.path(TT.cmd, "utf8-tokenize.perl"),
+              TT.tokenizer      = TT.tokenizer,
               TT.tagger         = file.path(TT.bin, "tree-tagger.exe"),
               TT.abbrev         = TT.abbrev,
-              TT.params         = file.path(TT.lib, "english-utf8.par"),
+              TT.params         = TT.params,
               TT.lexicon        = c(),
               TT.lookup         = c(),
               TT.filter         = TT.filter,
