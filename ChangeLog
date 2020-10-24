@@ -1,5 +1,9 @@
 ChangeLog for package koRpus.lang.en
 
+changes in version 0.1-5 (2020-10-24)
+unreleased:
+  - this release is under development
+
 changes in version 0.1-4 (2020-10-24)
 fixed:
   - removed hard coded abbreviations from global TT.tknz.opts in preset, to
