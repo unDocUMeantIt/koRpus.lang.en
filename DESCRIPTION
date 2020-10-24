@@ -1,13 +1,13 @@
 Package: koRpus.lang.en
 Type: Package
 Title: Language Support for 'koRpus' Package: English
-Author: Meik Michalke <meik.michalke@hhu.de> [aut, cre], Elen Le Foll [ctb] (BNC tagset)
+Author: Meik Michalke [aut, cre], Elen Le Foll [ctb] (BNC tagset)
 Maintainer: Meik Michalke <meik.michalke@hhu.de>
 Depends: R (>= 3.1),koRpus (>= 0.11-2)
-Imports: methods,sylly.en
+Imports: sylly.en
 Additional_repositories: https://undocumeantit.github.io/repos/l10n
 Description: Adds support for the English language to the 'koRpus' package. To ask for help, report bugs, suggest feature improvements, or discuss the global development of the
-                    package, please consider subscribing to the koRpus-dev mailing list (<http://korpusml.reaktanz.de>).
+                    package, please consider subscribing to the koRpus-dev mailing list (<https://korpusml.reaktanz.de>).
 License: GPL (>= 3)
 Encoding: UTF-8
 LazyLoad: yes
@@ -16,5 +16,5 @@ BugReports: https://github.com/unDocUMeantIt/koRpus.lang.en/issues
 Authors@R: c(person(given="Meik", family="Michalke", email="meik.michalke@hhu.de", role=c("aut", "cre")), person(given="Elen", family="Le Foll", role=c("ctb"), comment="BNC
                     tagset"))
 Version: 0.1-4
-Date: 2019-05-14
-RoxygenNote: 6.1.1
+Date: 2020-10-24
+RoxygenNote: 7.1.1

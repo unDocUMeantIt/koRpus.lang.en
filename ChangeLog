@@ -1,15 +1,13 @@
 ChangeLog for package koRpus.lang.en
 
-changes in version 0.1-4 (2020-10-23)
-unreleased:
-  - this release is under development
+changes in version 0.1-4 (2020-10-24)
 fixed:
-  - removed hard coded abbreviations from global TT.tknz.opts in preset,
-    to enable checks for file names by koRpus
+  - removed hard coded abbreviations from global TT.tknz.opts in preset, to
+    enable checks for file names by koRpus
   - added missing BNC tag AJS and 15 ambiguity tags
 changed:
-  - removed the lexicon lookup from the preset, as it is also no longer
-    part of the TreeTagger script
+  - removed the lexicon lookup from the preset, as it is also no longer part
+    of the TreeTagger script
   - renamed abbreviations and parameter files omitting the "-utf8" suffix
 
 changes in version 0.1-3 (2019-05-13)
@@ -17,10 +15,10 @@ changed:
   - reverted temporary transitional changes from 0.1-2
 added:
   - now also supports the BNC tagset (thanks to Elen Le Foll)
-  - added missing PENN tags NNP, NNPS, and PRP$, and explained
-    why koRpus defaults to the BNC definition for the conflicting
-    tag PRP in the documentation.
-  
+  - added missing PENN tags NNP, NNPS, and PRP$, and explained why koRpus
+    defaults to the BNC definition for the conflicting tag PRP in the
+    documentation. 
+
 changes in version 0.1-2 (2018-03-20)
 fixed:
   - package name in license header
